@@ -1,0 +1,146 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
+    margin: 0;
+    background: #e7e7e7;
+    color: black;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, header ul {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.button {
+    border-radius: 3px;
+    border: solid 2px #1c6698;
+    padding: 14px 36px;
+    color: #1c6698;
+}
+.button:hover {
+    background: #1c6698;
+    color: white;
+}
+a.button {
+    text-decoration: none;
+}
+
+
+/* layout */
+.wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+header,
+#about-me,
+footer,
+.skill {
+    background: black;
+    color: #a2a2a2;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+header h2 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+header #icon-open {
+
+}
+
+header #icon-close {
+    display: none;
+}
+
+header nav {
+    display: none;
+}
+
+/* menu */
+header.nav-open #icon-open {
+    display: none;
+}
+
+header.nav-open nav,
+header.nav-open #icon-close {
+    display: block;
+}
+
+header.nav-open nav {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #e7e7e7;
+    height: 448px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.nav-open #icon-close {
+    z-index: 10;
+}
+
+header.nav-open ul {
+    letter-spacing: 2px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+header.nav-open ul li {
+    color: #1c6698;
+    margin: 40px;
+}
+
+/* summary */
+#summary {
+
+}
+
+#summary p {
+    font-size: 18px;
+}
+
+/* TODO fix button */
+#summary h1 {
+    margin-top: 24px;
+    margin-bottom: 34px;
+}
